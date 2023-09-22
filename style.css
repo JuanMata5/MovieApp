@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #282c34;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #ffffff;
+  }
+  
+  input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+     
+}
+
+  button:hover {
+    background-color: #777777;
+  }
+  
+  #results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 5%;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    
+  }
+
+  #loading {
+    font-size: 30px;
+    margin-top: 5%;
+    color: #ffffff;
+  } 
+  
+  .movie {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    
+  }
+  
+  .movie img {
+    width: 205px;
+    
+    
+  }
+  
+  .movie h2 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #fff;
+  }
+  
+  .movie p {
+    margin-top: 10px;
+   color: #fff;
+  }
+  
+  @media (max-width:450px) {
+    #results {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+        gap: 10px;
+        margin-top: 5%;
+        text-align: left;
+        font-size: 20px;
+        font-weight: bold;
+        margin: auto;
+        place-items: center;
+        
+      }
+
+      .movie img {
+        width: 305px;
+        
+        
+      }
+
+      input[type="text"] {
+        width: 200px;
+        padding: 10px;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+      
+      button {
+        padding: 12px 20px;
+        font-size: 16px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+         
+    }
+  }
